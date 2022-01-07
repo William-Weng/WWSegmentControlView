@@ -62,8 +62,9 @@ open class WWSegmentControlView: UIView {
 
 // MARK: - 開放的function
 public extension WWSegmentControlView {
-        
+    
     /// [初始化](https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/在-storyboard-加入-xib-的-view-e94826a7a8f3)
+    /// - Parameter count: [Int](https://swift.gg/2017/04/20/quick-guide-animations-with-uiviewpropertyanimator/)
     func initCount(_ count: Int) {
         
         guard count > 0 else { return }
@@ -83,10 +84,10 @@ public extension WWSegmentControlView {
         layer._maskedCorners(radius: cornerRadius)
     }
     
-    /// 移動到被該index
+    /// [移動到被該index](https://www.jianshu.com/p/5f1a008d45bc)
     /// - Parameters:
-    ///   - index: Int
-    ///   - animationType: WWSegmentControlViewAnimationType
+    ///   - index: [Int](https://qiita.com/yimajo/items/892bd2fe1ccb808ffe49)
+    ///   - animationType: [WWSegmentControlViewAnimationType](https://qiita.com/yimajo/items/892bd2fe1ccb808ffe49)
     func selectedIndex(_ index: Int, animationType: WWSegmentControlViewAnimationType = .none) {
         
         switch animationType {
@@ -96,9 +97,9 @@ public extension WWSegmentControlView {
         }
     }
     
-    /// 設定動畫的時間 / Q度
+    /// [設定動畫的時間 / Q度](https://www.jianshu.com/p/1ad5bede88bd)
     /// - Parameters:
-    ///   - start: AnimationInfomation
+    ///   - start: [AnimationInfomation](https://www.jianshu.com/p/a181b47f8881)
     ///   - end: AnimationInfomation
     func animationInfomation(start: AnimationInfomation, end: AnimationInfomation) {
         animationInfo.start = start
