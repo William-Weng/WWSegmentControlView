@@ -156,13 +156,18 @@ private extension WWSegmentControlView {
     func didSelectedIndexWithMoveing(at index: Int) {
         
         guard let selectedButton = myStackView.arrangedSubviews[safe: index] else { return }
-        
+                
         myDelegate?.willMoveSegmentControl(self, from: currentIndex, to: index)
         
-        UIViewPropertyAnimator(duration: animationInfo.start.duration, dampingRatio: animationInfo.start.dampingRatio, animations: {
+        let animator = UIViewPropertyAnimator(duration: animationInfo.start.duration, dampingRatio: animationInfo.start.dampingRatio, animations: {
             self.selectedButton.center = selectedButton.center
+        })
+        
+        animator.addCompletion({ _ in
             self.didSelectedIndex(at: index)
-        }).startAnimation()
+        })
+        
+        animator.startAnimation()
     }
     
     /// constraintd的動畫效果

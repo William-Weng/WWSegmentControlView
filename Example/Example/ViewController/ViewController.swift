@@ -53,7 +53,7 @@ extension ViewController: WWSegmentControlDelegate {
     
     func didMovedSegmentControl(_ segmentControl: WWSegmentControlView, to index: Int) {
         
-        guard let type = SegmentControlViewType.init(rawValue: segmentControl.tag) else { return }
+        guard let type = SegmentControlViewType(rawValue: segmentControl.tag) else { return }
         
         switch type {
         case .base:
