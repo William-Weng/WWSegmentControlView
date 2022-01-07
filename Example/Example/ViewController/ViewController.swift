@@ -7,6 +7,7 @@
 //  file:///Users/william/Desktop/WWSegmentControlView
 
 import UIKit
+import WWSegmentControlView
 
 final class ViewController: UIViewController {
     
@@ -20,7 +21,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var baseSegmentControlView: WWSegmentControlView!
     @IBOutlet weak var plusSegmentControlView: WWSegmentControlView!
 
-    private let selectedImages = [#imageLiteral(resourceName: "LightHighlight"), #imageLiteral(resourceName: "LightOn"), #imageLiteral(resourceName: "LightOff")]
+    private let selectedImages = [#imageLiteral(resourceName: "LightHighlight"), #imageLiteral(resourceName: "LightOn"), #imageLiteral(resourceName: "LightOff"), #imageLiteral(resourceName: "LightHighlight")]
     private var currentIndex: Int = 100
 
     override func viewDidLoad() {
@@ -59,7 +60,7 @@ extension ViewController: WWSegmentControlDelegate {
             selectedLabel.text = "\(index)"
         case .plus:
             selectedLabel.text = "\(index)"
-            selectedImageView.image = selectedImages[safe: index]
+            selectedImageView.image = selectedImages[index]
         }
     }
 }

@@ -27,9 +27,10 @@ open class WWSegmentControlView: UIView {
     @IBInspectable public var currentIndex: Int = 0
     @IBInspectable public var count: Int = 3
     @IBInspectable public var cornerRadius: CGFloat = 8
-    
+
+    @IBOutlet weak public var selectedButton: UIButton!
+
     @IBOutlet weak var myStackView: UIStackView!
-    @IBOutlet weak var selectedButton: UIButton!
     @IBOutlet weak var selectedButtonWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var selectedButtonHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var selectedButtonLeadingConstraint: NSLayoutConstraint!
