@@ -92,7 +92,7 @@ public extension WWSegmentControlView {
         switch animationType {
         case .none: didSelectedIndex(at: index)
         case .dumping: didSelectedIndexWithDamping(at: index)
-        case .moving: didSelectedIndexWithMoveing(at: index)
+        case .moving: didSelectedIndexWithMoving(at: index)
         }
     }
     
@@ -153,7 +153,7 @@ private extension WWSegmentControlView {
     
     /// 移動到被該index (有移動動畫)
     /// - Parameter index: Int
-    func didSelectedIndexWithMoveing(at index: Int) {
+    func didSelectedIndexWithMoving(at index: Int) {
         
         guard let selectedButton = myStackView.arrangedSubviews[safe: index] else { return }
                 
