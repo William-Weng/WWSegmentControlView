@@ -12,10 +12,10 @@
       },
       {
         "package": "WWSegmentControlView",
-        "repositoryURL": "/Users/william/Desktop/WWSegmentControlView",
+        "repositoryURL": "https://github.com/William-Weng/WWSegmentControlView.git",
         "state": {
           "branch": "main",
-          "revision": "f35d29b4b3d689e1984be326bb2894990a8d3315",
+          "revision": "0ba4593272af4b281b3473e7d05454d820d806ee",
           "version": null
         }
       }

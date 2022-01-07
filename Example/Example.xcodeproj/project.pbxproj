@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D7CF00727880C09005BFF8D /* WWSegmentControlView in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7CF00627880C09005BFF8D /* WWSegmentControlView */; };
+		3D1717F72788143E00C634F5 /* WWSegmentControlView in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1717F62788143E00C634F5 /* WWSegmentControlView */; };
 		3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAC9C1827016E78006663C2 /* WWPrint */; };
 		3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87326F198EF00522E3B /* AppDelegate.swift */; };
 		3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCD87726F198EF00522E3B /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAC9C1927016E78006663C2 /* WWPrint in Frameworks */,
-				3D7CF00727880C09005BFF8D /* WWSegmentControlView in Frameworks */,
+				3D1717F72788143E00C634F5 /* WWSegmentControlView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			name = Example;
 			packageProductDependencies = (
 				3DAC9C1827016E78006663C2 /* WWPrint */,
-				3D7CF00627880C09005BFF8D /* WWSegmentControlView */,
+				3D1717F62788143E00C634F5 /* WWSegmentControlView */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -149,7 +149,7 @@
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
 				3DAC9C1727016E78006663C2 /* XCRemoteSwiftPackageReference "WWPrint" */,
-				3D7CF00527880C09005BFF8D /* XCRemoteSwiftPackageReference "WWSegmentControlView" */,
+				3D1717F52788143E00C634F5 /* XCRemoteSwiftPackageReference "WWSegmentControlView" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -385,9 +385,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3D7CF00527880C09005BFF8D /* XCRemoteSwiftPackageReference "WWSegmentControlView" */ = {
+		3D1717F52788143E00C634F5 /* XCRemoteSwiftPackageReference "WWSegmentControlView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/william/Desktop/WWSegmentControlView";
+			repositoryURL = "https://github.com/William-Weng/WWSegmentControlView.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -404,9 +404,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3D7CF00627880C09005BFF8D /* WWSegmentControlView */ = {
+		3D1717F62788143E00C634F5 /* WWSegmentControlView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D7CF00527880C09005BFF8D /* XCRemoteSwiftPackageReference "WWSegmentControlView" */;
+			package = 3D1717F52788143E00C634F5 /* XCRemoteSwiftPackageReference "WWSegmentControlView" */;
 			productName = WWSegmentControlView;
 		};
 		3DAC9C1827016E78006663C2 /* WWPrint */ = {
