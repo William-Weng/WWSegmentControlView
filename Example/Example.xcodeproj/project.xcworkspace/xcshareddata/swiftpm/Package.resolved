@@ -14,9 +14,9 @@
         "package": "WWSegmentControlView",
         "repositoryURL": "https://github.com/William-Weng/WWSegmentControlView.git",
         "state": {
-          "branch": "main",
-          "revision": "0381ee570513efec1bf621650102603d735842a7",
-          "version": null
+          "branch": null,
+          "revision": "55e30297fcb591079c8dc4b30e49add4a43e3d61",
+          "version": "1.0.1"
         }
       }
     ]

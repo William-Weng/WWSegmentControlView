@@ -10,7 +10,7 @@ UISegmentControl的加強版.
 ### [Installation with Swift Package Manager](https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/使用-spm-安裝第三方套件-xcode-11-新功能-2c4ffcf85b4b)
 ```
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWSegmentControlView.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/William-Weng/WWSegmentControlView.git", .upToNextMajor(from: "1.0.1"))
 ]
 ```
 ![](./IBDesignable.png)
@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var baseSegmentControlView: WWSegmentControlView!
     @IBOutlet weak var plusSegmentControlView: WWSegmentControlView!
 
-    private let selectedImages = [#imageLiteral(resourceName: "LightHighlight"), #imageLiteral(resourceName: "LightOn"), #imageLiteral(resourceName: "LightOff")]
+    private let selectedImages = [#imageLiteral(resourceName: "LightHighlight"), #imageLiteral(resourceName: "LightOn"), #imageLiteral(resourceName: "LightOff"), #imageLiteral(resourceName: "LightHighlight")]
     private var currentIndex: Int = 100
 
     override func viewDidLoad() {
@@ -47,11 +47,11 @@ final class ViewController: UIViewController {
     }
     
     @objc func didSelectBaseButton(_ sender: UIButton) {
-        baseSegmentControlView.selectedIndex(sender.tag, animated: false)
+        baseSegmentControlView.selectedIndex(sender.tag, animationType: .moving)
     }
     
     @objc func didSelectPlusButton(_ sender: UIButton) {
-        plusSegmentControlView.selectedIndex(sender.tag, animated: true)
+        plusSegmentControlView.selectedIndex(sender.tag, animationType: .dumping)
     }
 }
 
@@ -92,15 +92,14 @@ extension ViewController {
         }
         
         plusSegmentControlView.tag = SegmentControlViewType.plus.rawValue
-        plusSegmentControlView.animationInfomation(start: (0.5, 0.8), end: (2.0, 0.1))
+        plusSegmentControlView.animationInfomation(start: (0.25, 1.0), end: (0.25, 0.8))
         plusSegmentControlView.selectedButton.backgroundColor = .black.withAlphaComponent(0.3)
         plusSegmentControlView.controlButtons.forEach { button in
             button.addTarget(self, action: #selector(didSelectPlusButton(_:)), for: .touchDown)
             button.backgroundColor = .yellow
             button.setTitle("", for: .normal)
-            button.setImage(selectedImages[button.tag], for: .normal)
+            button.setImage(selectedImages[button.tag % selectedImages.count], for: .normal)
         }
     }
 }
-
 ```
