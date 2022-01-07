@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WWSegmentControlView" customModule="WWSegmentControlView">
+            <connections>
+                <outlet property="myStackView" destination="Tgi-SM-zum" id="C4F-N0-aCj"/>
+                <outlet property="selectedButton" destination="3vc-3K-qeW" id="Rob-89-jAv"/>
+                <outlet property="selectedButtonHeightConstraint" destination="gW5-Qe-z8f" id="7pg-ro-n5Y"/>
+                <outlet property="selectedButtonLeadingConstraint" destination="hZo-cn-1K4" id="Lq0-Q6-QTD"/>
+                <outlet property="selectedButtonWidthConstraint" destination="w5t-Xh-OoY" id="FL5-xl-hRN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="962" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tgi-SM-zum">
+                    <rect key="frame" x="0.0" y="0.0" width="962" height="236"/>
+                </stackView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vc-3K-qeW">
+                    <rect key="frame" x="0.0" y="0.0" width="481" height="236"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3vc-3K-qeW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4he-U1-isu"/>
+                <constraint firstItem="Tgi-SM-zum" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BXt-WN-Ifh"/>
+                <constraint firstItem="Tgi-SM-zum" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Sdh-gy-huY"/>
+                <constraint firstItem="Tgi-SM-zum" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tmy-7B-eOE"/>
+                <constraint firstItem="Tgi-SM-zum" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bc6-cF-llo"/>
+                <constraint firstItem="3vc-3K-qeW" firstAttribute="height" secondItem="Tgi-SM-zum" secondAttribute="height" id="gW5-Qe-z8f"/>
+                <constraint firstItem="3vc-3K-qeW" firstAttribute="leading" secondItem="Tgi-SM-zum" secondAttribute="leading" id="hZo-cn-1K4"/>
+                <constraint firstItem="Tgi-SM-zum" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j2B-to-B5p"/>
+                <constraint firstAttribute="bottom" secondItem="Tgi-SM-zum" secondAttribute="bottom" id="snA-Fu-BAp"/>
+                <constraint firstItem="3vc-3K-qeW" firstAttribute="width" secondItem="Tgi-SM-zum" secondAttribute="width" multiplier="1/2" id="w5t-Xh-OoY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="537.68115942028987" y="-81.026785714285708"/>
+        </view>
+    </objects>
+</document>
